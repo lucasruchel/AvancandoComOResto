@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="TabuleiroView">
+        <attr name="itens" format="string" localization="suggested" />
+        <attr name="itens_texture" format="integer" />
+        <attr name="posicao_inicial" format="integer"/>
+    </declare-styleable>
+
+    <item name="image_alpha" type="style" format="float">0.6</item>
+</resources>

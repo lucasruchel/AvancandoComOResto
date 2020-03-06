@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center"
+
+    tools:context="ifpr.delabona.fabiana.tcc.MainActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/fv"
+        android:scaleType="centerInside"
+        android:id="@+id/imageView"
+
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escolha seu Peão"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="14dp">
+
+        <ImageView
+            android:onClick="escolherPeao"
+            android:id="@+id/iCoelho"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+
+            style="@style/ImagePeao"
+            android:layout_height="100dp"
+            android:src="@drawable/coelho"/>
+
+        <ImageView
+            android:onClick="escolherPeao"
+            android:id="@+id/iGato"
+            android:layout_width="0dp"
+            style="@style/ImagePeao"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:src="@drawable/gato"/>
+
+        <ImageView
+            android:onClick="escolherPeao"
+            android:id="@+id/iGirafa"
+            android:layout_width="0dp"
+            style="@style/ImagePeao"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:src="@drawable/girafa"/>
+
+        <ImageView
+            android:onClick="escolherPeao"
+            android:id="@+id/iOvelha"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/ImagePeao"
+            android:layout_height="100dp"
+            android:src="@drawable/ovelha"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:onClick="escolherPeao"
+            android:id="@+id/iPanda"
+            android:layout_weight="1"
+            style="@style/ImagePeao"
+            android:layout_height="100dp"
+            android:src="@drawable/panda"/>
+
+        <ImageView
+            android:id="@+id/iTigre"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/ImagePeao"
+            android:onClick="escolherPeao"
+            android:layout_height="100dp"
+            android:src="@drawable/tigre"/>
+
+    </LinearLayout>
+
+    <Button
+        android:text="@string/BotaoIniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp" />
+</LinearLayout>
